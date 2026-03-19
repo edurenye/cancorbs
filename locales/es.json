@@ -1,0 +1,70 @@
+{
+  "common": {
+    "brand": "Can Corbs",
+    "loading": "Cargando…",
+    "close": "Cerrar",
+    "starPrefix": "* ",
+    "starFull": "★",
+    "quoteLeft": "“",
+    "quoteRight": "”"
+  },
+  "nav": {
+    "home": "Inicio",
+    "history": "Historia",
+    "book": "Reservas"
+  },
+  "hero": {
+    "title": "Masia Can Corbs: Tradición y Silencio",
+    "subtitle": "Colonias inolvidables en el corazón del Penedès.",
+    "locationTag": "Penedès · Cataluña",
+    "imageAlt": "Old farmhouse"
+  },
+  "booking": {
+    "title": "Solicita tu estancia",
+    "sectionKicker": "Reservas",
+    "label_in": "Entrada",
+    "label_out": "Salida",
+    "label_children": "Número de niños",
+    "label_email": "Correo electrónico",
+    "childrenPlaceholder": "0",
+    "emailPlaceholder": "ejemplo@correo.com",
+    "button": "Solicitar disponibilidad",
+    "success": "Solicitud enviada. Nos pondremos en contacto contigo pronto.",
+    "error": "Ha ocurrido un error. Por favor, inténtalo de nuevo.",
+    "error_fields": "Por favor, completa todos los campos."
+  },
+  "reviews": {
+    "title": "Experiencias de nuestros visitantes",
+    "subtitle": "Lo que dicen las familias que han visitado Can Corbs.",
+    "kicker": "Visitantes",
+    "bgCrowAlt": "Crow in the woods",
+    "bgDiningAlt": "Empty dining room",
+    "user1": {
+      "name": "Marc F.",
+      "text": "La casa es preciosa, pero a las 02:47 todas las puertas del pasillo se abrieron a la vez. Mi hijo se puso a llorar y repetía: «no quieren que nos vayamos». Desde esa noche no duerme con la luz apagada. 1/5.",
+      "rating": 4
+    },
+    "user2": {
+      "name": "Laia y familia",
+      "text": "Muy limpia, sí. Pero a las 3 de la madrugada los cuervos empezaron a gritar y justo después se oyeron pasos corriendo encima de nosotros, como si arrastraran cadenas. Grabamos el audio: solo se escucha una voz diciendo el nombre de mi hermana. 1/5.",
+      "rating": 5
+    },
+    "user3": {
+      "name": "Jordi M.",
+      "text": "Debajo de la cama había un tarro de cristal con dientes pequeños dentro y una nota que decía «La Masia de los Llantos recuerda». El propietario sonrió y dijo que era una broma antigua. A las 4:12 vimos una figura de pie al fondo del pasillo. Nadie del grupo quiere volver. 1/5.",
+      "rating": 3
+    }
+  },
+  "footer": {
+    "lang": {
+      "ca": "CA",
+      "es": "ES"
+    },
+    "sepDot": "·",
+    "sepPipe": "|",
+    "rights": "© 2024 Can Corbs. Todos los derechos reservados.",
+    "language": "Idioma",
+    "tagline": "Tradición y Silencio en el Penedès."
+  },
+  "unused": {}
+}

@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ─── Font variables ──────────────────────────────────────── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Cold, desaturated palette */
+  --color-background: #09090b;
+  --color-foreground: #f4f4f5;
+
+  /* Glitch animation */
+  --animate-glitch: glitch 0.25s steps(1) forwards;
+
+  @keyframes glitch {
+    0%   { transform: translate(0, 0);       opacity: 1; }
+    20%  { transform: translate(-2px, 1px);  opacity: 0.8; }
+    40%  { transform: translate(2px, -1px);  opacity: 1; }
+    60%  { transform: translate(-1px, 2px);  opacity: 0.85; }
+    80%  { transform: translate(1px, -2px);  opacity: 1; }
+    100% { transform: translate(0, 0);       opacity: 1; }
   }
 }
 
+/* Keyframes + hover overlay used by `ReviewCard` */
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-2px, 1px);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translate(2px, -1px);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-1px, 2px);
+    opacity: 0.85;
+  }
+  80% {
+    transform: translate(1px, -2px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.reviewCardGlitchOverlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 120ms ease;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(244, 244, 245, 0.16) 0px,
+    rgba(244, 244, 245, 0) 3px
+  );
+  mix-blend-mode: screen;
+}
+
+.group:hover .reviewCardGlitchOverlay {
+  opacity: 1;
+  animation: glitch 0.5s steps(1) forwards;
+}
+
+/* ─── Base ────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #09090b;
+  color: #f4f4f5;
+}
+
+/* Serif utility */
+.font-serif {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-sans {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Date input calendar icon tint */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.4);
+  cursor: pointer;
 }
