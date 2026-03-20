@@ -3,14 +3,28 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "3001:3000"
     environment:
-      # SQLite file inside the named volume (survives container restarts)
       DATABASE_URL: file:/data/dev.db
       NODE_ENV: production
     volumes:
       - cancorbs-sqlite:/data
 
+  # Terminates TLS with Let's Encrypt for cancorbs.ydns.eu → web:3000
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "3401:80"
+      - "4403:443"
+      - "4403:443/udp" # HTTP/3 (QUIC)
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - web
+
 volumes:
   cancorbs-sqlite:
+  caddy_data:
+  caddy_config:

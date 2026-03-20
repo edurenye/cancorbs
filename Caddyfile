@@ -1,0 +1,14 @@
+# HTTPS via Let's Encrypt (automatic).
+# Point DNS A record cancorbs.ydns.eu → this server; open ports 80 and 443.
+# Optional: create .env with CADDY_EMAIL=you@example.com and add to the global block:
+#   { email you@example.com }
+
+cancorbs.ydns.eu {
+	reverse_proxy web:3000
+
+	header {
+		-Server
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+}
