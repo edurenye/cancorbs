@@ -11,17 +11,17 @@ export default function ReviewsSection() {
     {
       name: t("reviews.user1.name"),
       text: t("reviews.user1.text"),
-      rating: 4,
+      rating: 1,
     },
     {
       name: t("reviews.user2.name"),
       text: t("reviews.user2.text"),
-      rating: 5,
+      rating: 3,
     },
     {
       name: t("reviews.user3.name"),
       text: t("reviews.user3.text"),
-      rating: 3,
+      rating: 1,
     },
   ];
 

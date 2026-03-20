@@ -24,7 +24,7 @@
     "sectionKicker": "Reservas",
     "label_in": "Entrada",
     "label_out": "Salida",
-    "label_children": "Número de niños",
+    "label_children": "Número de personas",
     "label_email": "Correo electrónico",
     "childrenPlaceholder": "0",
     "emailPlaceholder": "ejemplo@correo.com",
@@ -41,17 +41,17 @@
     "bgDiningAlt": "Empty dining room",
     "user1": {
       "name": "Marc F.",
-      "text": "La casa es preciosa, pero a las 02:47 todas las puertas del pasillo se abrieron a la vez. Mi hijo se puso a llorar y repetía: «no quieren que nos vayamos». Desde esa noche no duerme con la luz apagada. 1/5.",
+      "text": "La casa es preciosa, pero a las 02:47 todas las puertas del pasillo se abrieron a la vez. Mi hijo se puso a llorar y repetía: «no quieren que nos vayamos». Desde esa noche no duerme con la luz apagada.",
       "rating": 4
     },
     "user2": {
       "name": "Laia y familia",
-      "text": "Muy limpia, sí. Pero a las 3 de la madrugada los cuervos empezaron a gritar y justo después se oyeron pasos corriendo encima de nosotros, como si arrastraran cadenas. Grabamos el audio: solo se escucha una voz diciendo el nombre de mi hermana. 1/5.",
+      "text": "Muy limpia, sí. Pero a las 3 de la madrugada los cuervos empezaron a gritar y justo después se oyeron pasos corriendo encima de nosotros, como si arrastraran cadenas. Grabamos el audio: solo se escucha una voz diciendo el nombre de mi hermana.",
       "rating": 5
     },
     "user3": {
       "name": "Jordi M.",
-      "text": "Debajo de la cama había un tarro de cristal con dientes pequeños dentro y una nota que decía «La Masia de los Llantos recuerda». El propietario sonrió y dijo que era una broma antigua. A las 4:12 vimos una figura de pie al fondo del pasillo. Nadie del grupo quiere volver. 1/5.",
+      "text": "Debajo de la cama había un tarro de cristal con dientes pequeños dentro y una nota que decía «La Masia de los Llantos recuerda». El propietario sonrió y dijo que era una broma antigua. A las 4:12 vimos una figura de pie al fondo del pasillo. Nadie del grupo quiere volver.",
       "rating": 3
     }
   },

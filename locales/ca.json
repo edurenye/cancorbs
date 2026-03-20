@@ -24,7 +24,7 @@
     "sectionKicker": "Reserves",
     "label_in": "Entrada",
     "label_out": "Sortida",
-    "label_children": "Nombre de nens",
+    "label_children": "Nombre de persones",
     "label_email": "Correu electrònic",
     "childrenPlaceholder": "0",
     "emailPlaceholder": "exemple@correu.com",
@@ -41,17 +41,17 @@
     "bgDiningAlt": "Empty dining room",
     "user1": {
       "name": "Marc F.",
-      "text": "La casa és preciosa, però a les 02:47 totes les portes del passadís es van obrir alhora. El meu fill va començar a plorar i a repetir: «no volen que marxem». Des d’aquella nit no dorm amb el llum apagat. 1/5.",
+      "text": "La casa és preciosa, però a les 02:47 totes les portes del passadís es van obrir alhora. El meu fill va començar a plorar i a repetir: «no volen que marxem». Des d’aquella nit no dorm amb el llum apagat.",
       "rating": 4
     },
     "user2": {
       "name": "Laia i família",
-      "text": "Molt neta, sí. Però a les 3 de la matinada els corbs van començar a cridar i just després es van sentir passes corrent per sobre nostre, com si algú arrossegués cadenes. Vam gravar l’àudio: només se sent una veu dient el nom de la meva germana. 1/5.",
+      "text": "Molt neta, sí. Però a les 3 de la matinada els corbs van començar a cridar i just després es van sentir passes corrent per sobre nostre, com si algú arrossegués cadenes. Vam gravar l’àudio: només se sent una veu dient el nom de la meva germana.",
       "rating": 5
     },
     "user3": {
       "name": "Jordi M.",
-      "text": "Sota el llit hi havia un pot de vidre amb dents petites a dins i una nota que deia «La Masia dels Plors recorda». El propietari va somriure i va dir que era una broma antiga. A les 4:12 vam veure una figura dreta al final del passadís. Ningú del grup vol tornar-hi. 1/5.",
+      "text": "Sota el llit hi havia un pot de vidre amb dents petites a dins i una nota que deia «La Masia dels Plors recorda». El propietari va somriure i va dir que era una broma antiga. A les 4:12 vam veure una figura dreta al final del passadís. Ningú del grup vol tornar-hi.",
       "rating": 3
     }
   },

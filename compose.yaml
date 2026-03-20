@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      # SQLite file inside the named volume (survives container restarts)
+      DATABASE_URL: file:/data/dev.db
+      NODE_ENV: production
+    volumes:
+      - cancorbs-sqlite:/data
+
+volumes:
+  cancorbs-sqlite:
