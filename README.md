@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Origen / Origin
+
+Aquest projecte va ser utilitzat per fer una broma de l’equip de Vídeo CVG (Castellers de la Vila de Gràcia), per al vídeo de final de temporada 2026.
+
+This project was used for a joke by the Video CVG team (Castellers de la Vila de Gràcia), for their end-of-season 2026 video.
+
 ## Getting Started
 
 First, run the development server:
@@ -34,6 +40,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## GitHub Pages (free static hosting)
+
+This app is a static site when built with `STATIC_EXPORT=true` (see [`next.config.ts`](./next.config.ts)). The workflow [`.github/workflows/deploy-github-pages.yml`](./.github/workflows/deploy-github-pages.yml) runs on every push to `main`, uploads the `out/` folder, and deploys with [GitHub Pages](https://pages.github.com/).
+
+1. In the repository: **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**.
+2. Push to `main`. The site URL will be `https://<user>.github.io/<repo>/` for a normal project repository, or `https://<user>.github.io/` if the repository name is `<user>.github.io` (the workflow sets `BASE_PATH` accordingly).
+
+Local static build: `npm run build:static` (add `BASE_PATH=/your-repo` if you want to mimic a project-page URL). The booking block is informational only (no real reservations).
 
 ## Docker Compose + HTTPS (Let's Encrypt)
 

@@ -1,13 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type SubmitEvent } from "react";
 import { useTranslation } from "@/hooks/useTranslation";
-
-type FormState = "idle" | "loading" | "success" | "error";
 
 export default function BookingForm() {
   const { t } = useTranslation();
-  const [formState, setFormState] = useState<FormState>("idle");
+  const [revealed, setRevealed] = useState(false);
   const [fieldError, setFieldError] = useState<string | null>(null);
 
   const [fields, setFields] = useState({
@@ -22,7 +20,7 @@ export default function BookingForm() {
     setFieldError(null);
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setFieldError(null);
 
@@ -31,32 +29,7 @@ export default function BookingForm() {
       return;
     }
 
-    setFormState("loading");
-
-    try {
-      const res = await fetch("/api/bookings", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          startDate: fields.startDate,
-          endDate: fields.endDate,
-          children: Number(fields.children) || 0,
-          email: fields.email,
-        }),
-      });
-
-      if (res.ok) {
-        setFormState("success");
-        setFields({ startDate: "", endDate: "", children: "", email: "" });
-      } else {
-        const data = await res.json();
-        setFieldError(data.error ?? t("booking.error"));
-        setFormState("error");
-      }
-    } catch {
-      setFormState("error");
-      setFieldError(t("booking.error"));
-    }
+    setRevealed(true);
   }
 
   return (
@@ -69,11 +42,20 @@ export default function BookingForm() {
           {t("booking.title")}
         </h2>
 
-        {formState === "success" ? (
-          <div className="border border-zinc-700 bg-zinc-900 px-6 py-8 text-center">
-            <p className="text-sm tracking-wide text-zinc-300">
-              {t("booking.success")}
-            </p>
+        {revealed ? (
+          <div className="space-y-6">
+            <div className="border border-zinc-700 bg-zinc-900 px-6 py-8">
+              <p className="text-sm leading-relaxed tracking-wide text-zinc-300">
+                {t("booking.disabledNotice")}
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setRevealed(false)}
+              className="text-xs tracking-widest text-zinc-500 uppercase underline-offset-4 transition-colors hover:text-zinc-300"
+            >
+              {t("booking.backToForm")}
+            </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -143,12 +125,9 @@ export default function BookingForm() {
 
             <button
               type="submit"
-              disabled={formState === "loading"}
-              className="w-full border border-zinc-500 py-3.5 text-sm tracking-widest text-zinc-300 uppercase transition-all hover:border-zinc-300 hover:text-zinc-100 disabled:cursor-not-allowed disabled:opacity-40"
+              className="w-full border border-zinc-500 py-3.5 text-sm tracking-widest text-zinc-300 uppercase transition-all hover:border-zinc-300 hover:text-zinc-100"
             >
-              {formState === "loading"
-                ? t("common.loading")
-                : t("booking.button")}
+              {t("booking.button")}
             </button>
           </form>
         )}

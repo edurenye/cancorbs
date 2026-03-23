@@ -4,10 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      BOOKINGS_FILE: /data/bookings.json
       NODE_ENV: production
-    volumes:
-      - ./data:/data
 
   # Terminates TLS with Let's Encrypt for cancorbs.ydns.eu → web:3000
   caddy:

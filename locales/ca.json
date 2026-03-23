@@ -58,9 +58,9 @@
     "childrenPlaceholder": "0",
     "emailPlaceholder": "exemple@correu.com",
     "button": "Sol·licitar disponibilitat",
-    "success": "Sol·licitud enviada. Ens posarem en contacte amb tu aviat.",
-    "error": "Hi ha hagut un error. Torna-ho a intentar.",
-    "error_fields": "Si us plau, omple tots els camps."
+    "error_fields": "Si us plau, omple tots els camps.",
+    "disabledNotice": "Aquí no es pot reservar cap estada: les reserves estan desactivades. Aquest lloc és un Salvats de l’equip de vídeo del CVG (Castellers de la Vila de Gràcia) per al vídeo de final de temporada — una de les bromes de la sèrie de Salvats que preparem cada any.",
+    "backToForm": "Tornar al formulari"
   },
   "reviews": {
     "title": "Experiències dels nostres visitants",
