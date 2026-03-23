@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { appendBooking } from "@/lib/bookings-store";
 
 export async function POST(request: NextRequest) {
   try {
@@ -38,13 +38,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const booking = await prisma.booking.create({
-      data: {
-        startDate: start,
-        endDate: end,
-        children: Number(children),
-        email,
-      },
+    const booking = await appendBooking({
+      startDate: start,
+      endDate: end,
+      children: Number(children),
+      email,
     });
 
     return NextResponse.json(booking, { status: 201 });
