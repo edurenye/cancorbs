@@ -114,7 +114,7 @@ export default function BookingForm() {
                 type="number"
                 name="children"
                 min="0"
-                max="200"
+                max="90"
                 value={fields.children}
                 onChange={handleChange}
                 placeholder={t("booking.childrenPlaceholder")}

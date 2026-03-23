@@ -62,3 +62,5 @@ Direct HTTP without TLS (debug): **http://localhost:3401** still maps to the app
 ## Hero imagery
 
 The landing hero uses a **tiled photo collage** (large panel + two side panels). The files under `public/images/hero/` are **local copies** of images from [cansumoi.cat](https://cansumoi.cat/) (the main panel matches the URL you shared under `/api/uploads/organizepdf/...`; the side panels match that site’s homepage slider). **Those images are not yours**—swap them for **your own Can Corbs photos** before any public launch to avoid copyright issues.
+
+The **gallery** lives under `public/images/gallery/` (see filenames in `components/GallerySection.tsx`). Copy is driven by `locales/*.json` under `gallery.*`; set `gallery.subtitle` to an empty string `""` if you want no subtitle line.

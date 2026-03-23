@@ -10,7 +10,7 @@ export default function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section id="top" className="relative min-h-screen scroll-mt-0 overflow-hidden">
       {/* Tiled hero gallery — similar layout to rural / masía landing pages */}
       <div
         className="absolute inset-0 grid min-h-screen grid-cols-1 grid-rows-[minmax(0,1.1fr)_minmax(0,0.55fr)_minmax(0,0.55fr)] gap-1 sm:grid-cols-2 sm:grid-rows-[minmax(0,1fr)_minmax(0,0.9fr)] lg:grid-cols-12 lg:grid-rows-2 lg:gap-2"

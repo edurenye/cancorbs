@@ -11,7 +11,33 @@
   "nav": {
     "home": "Inicio",
     "history": "Historia",
+    "gallery": "Galería",
     "book": "Reservas"
+  },
+  "history": {
+    "sectionKicker": "Historia",
+    "title": "Can Corbs — Tu escapada rural en el Penedès",
+    "location": "Montmell (Bajo Penedès)",
+    "readMore": "Leer más",
+    "readLess": "Mostrar menos",
+    "p1": "Can Corbs es una masía del siglo XV completamente rehabilitada, enclavada en medio de un viñedo y junto a un bosque de pinos y encinas dentro del espacio natural protegido Montmell-Marmellar, en el término municipal de El Montmell. Tras una restauración integral culminada en 2023, la finca recupera toda su esencia original: paredes de piedra vista, vigas de madera centenaria y unos exteriores tranquilos rodeados de viñedos que invitan a desconectar por completo. Ideal para grupos, colonias y retiros rurales de hasta 90 personas.",
+    "p2": "La masía dista solo 1,5 km del antiguo pueblo abandonado de Marmellar, integrado en el mismo espacio natural Montmell-Marmellar. Un entorno cercano que sitúa a Can Corbs en un paisaje lleno de memoria, silencio e historia local.",
+    "p3": "La historia de Can Corbs forma parte de su encanto. La masía lleva el nombre de los cuervos que desde siempre han habitado sus tejados, y la comarca guarda numerosas leyendas e historias populares en torno a la finca, especialmente vinculadas a los turbulentos acontecimientos de la Tercera Guerra Carlista en 1873. Aquella época convulsa dejó huella en muchas masías del Penedès, y Can Corbs no es una excepción. Una historia rica que los más curiosos podrán explorar durante su estancia gracias a la documentación que ponemos a disposición de los huéspedes en la biblioteca de la planta baja.",
+    "p4": "Ciento cincuenta años después de aquellos tiempos difíciles, y coincidiendo con este aniversario redondo, Can Corbs ha vuelto a abrir las puertas con una vocación clara: ser un espacio de tradición, de contemplación y de descanso en plena naturaleza. Las instalaciones cuentan con cocina equipada, comedor para grupos grandes, 15 habitaciones con literas, zona de fogones exterior y un jardín amplio rodeado de viña y bosque. Los niños se encuentran especialmente a gusto, y las familias destacan a menudo la calidad del sueño que se duerme aquí, profundo y reparador desde la primera noche.",
+    "p5": "Hay que tener en cuenta que la ubicación privilegiada de Can Corbs, en medio del bosque y lejos de núcleos urbanos, implica una cobertura móvil limitada en la finca. Disponemos de conexión wifi para usos básicos, aunque recomendamos aprovechar la estancia para desconectar de verdad y disfrutar del entorno. Para cualquier emergencia, el teléfono fijo de la masía está operativo las 24 horas, siempre que no sea noche de tormenta. Ponemos a disposición también un equipo de radiofrecuencia conectado con el sereno local del Montmell para esas situaciones extraordinarias.",
+    "p6": "La reserva de Can Corbs implica la aceptación de los términos y condiciones generales de uso de la finca, disponibles en el momento de la contratación. La empresa gestora, de conformidad con la normativa aplicable y en los términos recogidos en la cláusula 11.3 del contrato, declina toda responsabilidad por \"experiencias de naturaleza no ordinaria durante la estancia.\""
+  },
+  "gallery": {
+    "sectionKicker": "Galería",
+    "title": "Espacios, masía y viñedos",
+    "subtitle": "Una muestra de la masía, las estancias y el entorno de viña y bosque de la finca.",
+    "alt1": "Panorámica de finca y viña",
+    "alt2": "Paisaje de viña y territorio",
+    "alt3": "Habitaciones y espacios de planta baja para grupos",
+    "alt4": "Habitacion doble",
+    "alt5": "Habitacion doble altillo",
+    "alt6": "Espacios comunes interiores para convivencia",
+    "alt7": "Cocina"
   },
   "hero": {
     "title": "Masia Can Corbs: Tradición y Silencio",
