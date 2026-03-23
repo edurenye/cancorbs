@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "@/hooks/useTranslation";
+import { withBasePath } from "@/lib/withBasePath";
 import Image from "next/image";
 
 const GALLERY_ITEMS = [
@@ -75,7 +76,7 @@ export default function GallerySection() {
                 .join(" ")}
             >
               <Image
-                src={item.src}
+                src={withBasePath(item.src)}
                 alt={t(item.altKey)}
                 fill
                 priority={i === 0}

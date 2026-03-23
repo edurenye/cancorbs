@@ -6,6 +6,9 @@ const staticExport = process.env.STATIC_EXPORT === "true";
 const basePath = process.env.BASE_PATH?.trim() ?? "";
 
 const nextConfig: NextConfig = {
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   ...(basePath ? { basePath, assetPrefix: basePath } : {}),
   ...(staticExport ? { output: "export" as const } : {}),
   turbopack: {

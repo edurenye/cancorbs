@@ -45,8 +45,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 This app is a static site when built with `STATIC_EXPORT=true` (see [`next.config.ts`](./next.config.ts)). The workflow [`.github/workflows/deploy-github-pages.yml`](./.github/workflows/deploy-github-pages.yml) runs on every push to `main`, uploads the `out/` folder, and deploys with [GitHub Pages](https://pages.github.com/).
 
-1. In the repository: **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**.
-2. Push to `main`. The site URL will be `https://<user>.github.io/<repo>/` for a normal project repository, or `https://<user>.github.io/` if the repository name is `<user>.github.io` (the workflow sets `BASE_PATH` accordingly).
+1. In the repository: **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”). Save, then push to `main` or re-run the workflow from the Actions tab. If Source is still a branch or Pages is off, `actions/deploy-pages` fails with **`HttpError: Not Found`** because the Pages API has no Actions deployment target.
+2. The site URL will be `https://<user>.github.io/<repo>/` for a normal project repository, or `https://<user>.github.io/` if the repository name is `<user>.github.io` (the workflow sets `BASE_PATH` accordingly). For an organization repository, confirm **Pages** is allowed under the org’s **Settings → Pages** policies.
 
 Local static build: `npm run build:static` (add `BASE_PATH=/your-repo` if you want to mimic a project-page URL). The booking block is informational only (no real reservations).
 

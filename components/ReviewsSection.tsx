@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "@/hooks/useTranslation";
+import { withBasePath } from "@/lib/withBasePath";
 import ReviewCard from "./ReviewCard";
 import Image from "next/image";
 
@@ -40,7 +41,7 @@ export default function ReviewsSection() {
           className="absolute -left-20 -top-16 opacity-10 grayscale blur-3xl"
         />
         <Image
-          src="/images/empty-dining-room.svg"
+          src={withBasePath("/images/empty-dining-room.svg")}
           alt={t("reviews.bgDiningAlt")}
           width={680}
           height={680}

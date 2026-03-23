@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "@/hooks/useTranslation";
+import { withBasePath } from "@/lib/withBasePath";
 import Image from "next/image";
 
 const heroFilter =
@@ -17,7 +18,7 @@ export default function HeroSection() {
       >
         <div className="relative min-h-[42vh] sm:min-h-0 sm:col-span-2 sm:row-span-1 lg:col-span-8 lg:row-span-2">
           <Image
-            src="/images/hero/cansumoi-user.jpg"
+            src={withBasePath("/images/hero/cansumoi-user.jpg")}
             alt={t("hero.imageAltMain")}
             fill
             priority
@@ -28,7 +29,7 @@ export default function HeroSection() {
         </div>
         <div className="relative min-h-[28vh] sm:min-h-0 lg:col-span-4 lg:col-start-9 lg:row-start-1">
           <Image
-            src="/images/hero/cansumoi-slider-1.jpg"
+            src={withBasePath("/images/hero/cansumoi-slider-1.jpg")}
             alt={t("hero.imageAltSideA")}
             fill
             sizes="(max-width: 1024px) 50vw, 34vw"
@@ -38,7 +39,7 @@ export default function HeroSection() {
         </div>
         <div className="relative min-h-[28vh] sm:min-h-0 lg:col-span-4 lg:col-start-9 lg:row-start-2">
           <Image
-            src="/images/hero/cansumoi-slider-2.jpg"
+            src={withBasePath("/images/hero/cansumoi-slider-2.jpg")}
             alt={t("hero.imageAltSideB")}
             fill
             sizes="(max-width: 1024px) 50vw, 34vw"
